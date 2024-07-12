@@ -19,7 +19,7 @@ export function ProductCard({
   name,
 }: iAppProps) {
   return (
-    <div className="rounded-lg">
+    <div className="rounded-lg border p-5 shadow-md">
       <div className="relative h-[230px]">
         <Image
           alt="Product image"
