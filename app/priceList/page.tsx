@@ -3,17 +3,17 @@
 const PriceList = () => {
   return (
     <div className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-10 py-10">
         <h1 className="text-4xl font-bold text-center mb-8 bg-blue-900 text-white py-4 rounded-lg">
           PRICE LIST
         </h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 129.4118%;">
-          <iframe src="https://drive.google.com/file/d/1PmJX25tP7DV-xRy3jA_H4QyfpQRduCz0/preview?usp=embed_googleplus" className="top: 0; left: 0; position: absolute; border: 0;" allowFullScreen width={500} height={300}></iframe>
+        <div className="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 129.4118%; px-10">
+          <iframe src="https://drive.google.com/file/d/1PmJX25tP7DV-xRy3jA_H4QyfpQRduCz0/preview?usp=embed_googleplus" className="top: 0; left: 0; position: absolute; border: 0;" allowFullScreen width={600} height={300}></iframe>
         </div>
           
-          <div>
+          <div className="px-10">
             <h2 className="text-3xl font-semibold mb-4">PRICE LIST AS OF 2024</h2>
             <p className="text-lg mb-4">
               We understand that value for money is a top priority for our esteemed customers, and
