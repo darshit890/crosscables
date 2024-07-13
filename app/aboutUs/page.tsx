@@ -62,6 +62,7 @@ const AboutUs = () => {
     <div className="p-10 bg-white text-gray-900">
       <h1 className="text-4xl font-bold mb-8 text-center">About Us</h1>
       <StickyScroll content={content} />
+      <p className="text-xl text-center mt-4 text-gray-900">Thank you for choosing Toss Automobiles as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.</p>
     </div>
   );
 };
