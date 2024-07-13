@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import { NAV_LINKS } from '@/constants'
+import MobileNav from './MobileNav'
 
 const Navbar = () => {
 
@@ -12,13 +13,17 @@ const Navbar = () => {
         <h2 className='font-style: italic font-bold text-2xl font-sans'>Toss Automobiles</h2>
       </Link>
 
-      <ul className="md:hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <Link href={link.href} key={link.key} className="regular-16 text-gray-600 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold">
             {link.label}
           </Link>
         ))}
       </ul>
+
+      <div className='lg:hidden'>
+        <MobileNav />
+      </div>
     </nav>
   )
 }
