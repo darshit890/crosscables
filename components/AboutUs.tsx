@@ -7,7 +7,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="min-h-max bg-gradient-to-br from-white to-blue-100 dark:from-gray-900 dark:to-blue-900">
-      <div className="max-w-7xl mx-auto flex flex-col pt-[5rem] px-5 pb-[5rem]">
+      <div className="max-w-7xl mx-auto flex flex-col pt-[3rem] px-5 pb-[5rem]">
         <div className="z-10 flex min-h-[8rem] items-center justify-center">
           <div
             className={cn(
@@ -20,15 +20,15 @@ const AboutUs = () => {
             </AnimatedShinyText>
           </div>
         </div>
-        <div className="flex flex-row mt-10 justify-between">
-          <div className="flex flex-row items-center gap-x-4">
-            <Image src={"/vercel.svg"} alt="" width={75} height={75} />
-            <span className="pointer-events-none max-w-xl whitespace-pre-wrap bg-gradient-to-b from-black to-gray-500/80 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
+        <div className="flex flex-col lg:flex-row mt-10 justify-between">
+          <div className="flex flex-row items-center gap-x-4 justify-center">
+            <Image src={"/logo.jpg"} alt="" width={75} height={75} />
+            <span className="pointer-events-none max-w-xl whitespace-pre-wrap bg-gradient-to-b from-primary to-gray-300/80 bg-clip-text text-center text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
               How it works
             </span>
           </div>
-          <div className="flex flex-col max-w-2xl">
-            <h4 className="text-5xl font-bold pt-1">
+          <div className="flex flex-col max-w-2xl lg:items-start items-center mx-auto">
+            <h4 className="md:text-5xl text-3xl font-bold pt-1 lg:text-left text-center ">
               Enhance productivity and build stronger customer relationship
             </h4>
             <p className="text-xl text-muted-foreground max-w-4xl pt-4 font-medium">

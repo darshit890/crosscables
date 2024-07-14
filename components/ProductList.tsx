@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const ProductList = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-blue-100 dark:from-gray-900 dark:to-blue-900">
+    <div className="min-h-screen bg-gradient-to-br from-white to-blue-100/80 dark:from-gray-900 dark:to-blue-900 py-10">
       <div className="max-w-7xl mx-auto flex flex-col pt-[5rem] px-5">
         <div className="z-10 flex min-h-[8rem] items-center justify-center">
           <div

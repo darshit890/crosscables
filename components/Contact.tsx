@@ -21,7 +21,7 @@ const Contact = () => {
           </AnimatedShinyText>
         </div>
       </div>
-      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 pb-4">
+      <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-primary to-gray-300/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 pb-4">
       Reach out to us
       </span>
       <p className="text-xl text-muted-foreground max-w-3xl  pt-4 font-medium text-center mx-auto pb-20">

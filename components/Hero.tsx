@@ -5,13 +5,15 @@ import React from 'react'
 import Link from "next/link";
 
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import Meteors from "./magicui/meteor";
 
 const Hero = () => {
   return (
     <div>
-      <div className="h-45">
-        <HeroHighlight className="h-full w-full flex flex-col items-center justify-center gap-3 bg-blue-900">
+      <div className="h-45 relative flex  w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <HeroHighlight className="h-full w-full flex flex-col items-center justify-center gap-3 ">
           <h6 className="text-2xl font-semibold text-center">Need Best Two Wheeler Control Cables?</h6>
+      <Meteors number={30} />
           <br />
           <motion.h1
             initial={{
