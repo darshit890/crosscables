@@ -41,7 +41,7 @@ export function ProductCard({
       </p>
 
       <Button asChild className="w-full mt-5">
-        <Link href={`/product/${id}`}>Learn More!</Link>
+        <Link href={`/products/${id}`}>Learn More!</Link>
       </Button>
     </div>
   );
