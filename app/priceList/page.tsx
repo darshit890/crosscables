@@ -2,7 +2,7 @@
 
 const PriceList = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-gradient-to-br from-blue-100 to-white">
       <div className=" mx-auto px-4 sm:px-6 lg:px-10 py-10">
         <h1 className="text-4xl font-bold text-center mb-8 bg-blue-900 text-white py-4 rounded-lg">
           PRICE LIST

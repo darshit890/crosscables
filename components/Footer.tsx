@@ -6,10 +6,10 @@ import { FaYoutube } from "react-icons/fa";
 
 function Footer() {
   return (
-    <>
-    <div className="border-t w-full"></div>
-      <section className="max-w-7xl mx-auto">
-        <div className=" h-1/2 w-full flex md:flex-row flex-col justify-around items-start py-20 px-6 mx-auto">
+    <div className="bg-blue-900">
+    <div className="border-t border-black w-full "></div>
+      <section className="max-w-7xl mx-auto ">
+        <div className=" h-1/2 w-full flex md:flex-row flex-col justify-around items-start py-20 px-6 mx-auto bg-blue-900">
           <div className="py-5 ">
             <ul>
               <p className=" font-bold text-3xl pb-6">
@@ -53,12 +53,12 @@ function Footer() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col justify-center items-center text-center  py-5 border-t">
+      <div className="flex flex-col justify-center items-center text-center  py-5 border-t border-black bg-blue-900">
         <h1 className=" text-gray-400 font-semibold">
           © 2024 NEXADEVS, All rights reserved
         </h1>
       </div>
-    </>
+    </div>
   );
 }
 

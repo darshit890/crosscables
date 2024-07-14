@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <div>
       <div className="h-45">
-        <HeroHighlight className="h-full w-full flex flex-col items-center justify-center gap-3">
+        <HeroHighlight className="h-full w-full flex flex-col items-center justify-center gap-3 bg-blue-900">
           <h6 className="text-2xl font-semibold text-center">Need Best Two Wheeler Control Cables?</h6>
           <br />
           <motion.h1
