@@ -6,7 +6,6 @@ import Link from "next/link";
 interface iAppProps {
   images: string;
   name: string;
-  price: number;
   smallDescription: string;
   id: string;
 }
@@ -14,7 +13,6 @@ interface iAppProps {
 export function ProductCard({
   images,
   id,
-  price,
   smallDescription,
   name,
 }: iAppProps) {
@@ -31,9 +29,6 @@ export function ProductCard({
 
       <div className="flex justify-between items-center mt-2">
         <h1 className="font-semibold text-xl">{name}</h1>
-        <h3 className="inline-flex items-center rounded-md bg-primary/10 px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset  ring-primary/10">
-          ${price}
-        </h3>
       </div>
 
       <p className="text-gray-600 line-clamp-2 text-sm mt-2">
@@ -41,7 +36,7 @@ export function ProductCard({
       </p>
 
       <Button asChild className="w-full mt-5">
-        <Link href={`/products/${id}`}>Learn More!</Link>
+        <Link href={`/products/${id}`}>View Product</Link>
       </Button>
     </div>
   );

@@ -10,7 +10,7 @@ export default async function ProductPage({
     <>
       <section className="mx-auto px-4  lg:mt-10 max-w-7xl lg:px-5 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16 ">
                 <Image
-                  src="/Product1.jpg"
+                  src="/Product3.jpg"
                   alt="yoo"
                   height={200}
                   width={400}
@@ -18,24 +18,24 @@ export default async function ProductPage({
                 />
         <div className="max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4">
           <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-            Accelarator Cable
+              Speedometer Cable
           </h1>
 
-          <p className="mb-4 text-lg mt-10">
-            High-quality replacement throttle control cable for vehicles. Connects the gas pedal to the
-            engine's throttle body, ensuring smooth acceleration response. Made from durable
-            materials for long-lasting performance. Compatible with various make and models
-            (specify compatibility in product details). Easy installation for DIY mechanics or
-            professionals.
+          <p className="mb-4 text-lg leading-relaxed mt-10">
+            A vital component connecting your vehicle's transmission to the speedometer. This
+            durable cable transmits rotational movement, allowing accurate speed readings on your
+            dashboard. Compatible with various makes and models, our high-quality speedometer
+            cable ensures reliable performance and easy installation. Replace your worn or damaged
+            cable to maintain precise speed monitoring and comply with traffic regulations.
           </p>
 
-          <h3 className="text-xl font-semibold mb-2">Key features:</h3>
+          <h3 className="text-xl font-semibold mb-2">Key Features:</h3>
           <ul className="space-y-1 list-disc list-inside">
-            <li>Precise throttle control</li>
-            <li>Durable construction</li>
-            <li>Smooth operation</li>
-            <li>OEM-quality replacement</li>
-            <li>Reduces pedal play</li>
+            <li>Ensures accurate speedometer readings</li>
+            <li>Durable construction for long-lasting use</li>
+            <li>Easy to install</li>
+            <li>Compatible with multiple vehicle types</li>
+            <li>Helps maintain legal compliance</li>
           </ul>
         </div>
       </section>
@@ -46,23 +46,23 @@ export default async function ProductPage({
           </h1>
         </div>
         <div className="grid gird-cols-1 lg:grid-cols-3 sm:grid-cols-2 mt-4 gap-10">
-        <ProductCard
-              images="/Product2.jpg"
-              name="Clutch Cable"
-              smallDescription="Connects the clutch pedal to the clutch fork, enabling smooth engagement and disengagement of the clutch in manual transmission vehicles."
-              id="2"
-            />
-            <ProductCard
-              images="/Product3.jpg"
-              name="Speedometer Cable"
-              smallDescription="Transmits vehicle speed from the transmission to the speedometer for accurate speed readings."
-              id="3"
-            />
             <ProductCard
               images="/Product4.jpg"
               name="Rear Brake Cable"
               smallDescription="Essential component that transmits force from the brake lever to the rear brake mechanism, ensuring responsive and reliable stopping power."
               id="4"
+            />
+            <ProductCard
+              images="/Product5.jpg"
+              name="Front Brake Cable"
+              smallDescription="Critical linkage that connects the brake lever to the front brake assembly, providing precise control and efficient braking performance."
+              id="5"
+            />
+            <ProductCard
+              images="/Product1.jpg"
+              name="Accelarator Cable"
+              smallDescription="Links the gas pedal to the throttle body, controlling fuel input and engine speed in response to driver input."
+              id="1"
             />
         </div>
       </div>

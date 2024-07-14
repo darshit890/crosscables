@@ -23,48 +23,36 @@ const Offers = () => {
           </Button>
         </div>
         <div className="grid gird-cols-1 lg:grid-cols-3 sm:grid-cols-2 mt-4 gap-10">
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="1"
-          />
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="2"
-          />
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="3"
-          />
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="3"
-          />
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="3"
-          />
-          <ProductCard
-            images="/next.svg"
-            name="Analog-Watch"
-            price={96}
-            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
-            id="3"
-          />
+            <ProductCard
+              images="/Product1.jpg"
+              name="Accelarator Cable"
+              smallDescription="Links the gas pedal to the throttle body, controlling fuel input and engine speed in response to driver input."
+              id="1"
+            />
+            <ProductCard
+              images="/Product2.jpg"
+              name="Clutch Cable"
+              smallDescription="Connects the clutch pedal to the clutch fork, enabling smooth engagement and disengagement of the clutch in manual transmission vehicles."
+              id="2"
+            />
+            <ProductCard
+              images="/Product3.jpg"
+              name="Speedometer Cable"
+              smallDescription="Transmits vehicle speed from the transmission to the speedometer for accurate speed readings."
+              id="3"
+            />
+            <ProductCard
+              images="/Product4.jpg"
+              name="Rear Brake Cable"
+              smallDescription="Essential component that transmits force from the brake lever to the rear brake mechanism, ensuring responsive and reliable stopping power."
+              id="4"
+            />
+            <ProductCard
+              images="/Product5.jpg"
+              name="Front Brake Cable"
+              smallDescription="Critical linkage that connects the brake lever to the front brake assembly, providing precise control and efficient braking performance."
+              id="5"
+            />
         </div>
     </div>
   )
