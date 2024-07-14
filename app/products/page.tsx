@@ -51,6 +51,20 @@ const Offers = () => {
             smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
             id="3"
           />
+          <ProductCard
+            images="/next.svg"
+            name="Analog-Watch"
+            price={96}
+            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
+            id="3"
+          />
+          <ProductCard
+            images="/next.svg"
+            name="Analog-Watch"
+            price={96}
+            smallDescription="Introducing our timeless Analog Watch, the epitome of classic elegance. Crafted with precision and style, this watch seamlessly blends sophistication with functionality. Its sleek design features a durable stainless steel case and a genuine leather strap for lasting comfort."
+            id="3"
+          />
         </div>
     </div>
   )
