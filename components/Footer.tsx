@@ -54,7 +54,7 @@ function Footer() {
       </section>
       <div className="flex flex-col justify-center items-center text-center  py-5 border-t border">
         <h1 className=" text-gray-400 font-semibold">
-          © 2024 CrossCables, All rights reserved
+          © 2024 Toss Automobiles, All rights reserved
         </h1>
       </div>
     </div>
