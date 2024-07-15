@@ -1,7 +1,7 @@
 import express from 'express'
 const router = express.Router();
-const crypto = require('crypto');
-const axios = require('axios');
+import crypto from 'crypto';
+import axios from 'axios';
 
 function generateTransactionID() {
     const timestamp = Date.now();
