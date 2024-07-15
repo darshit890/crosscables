@@ -41,7 +41,7 @@ const PaymentForm =() => {
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
-          <LabelInputContainer>
+          <LabelInputContainer className='mb-4'>
             <Label htmlFor="firstname">Full name</Label>
             <Input id="name" placeholder="Tyler" type="text" name="name" onChange={handleChange}/>
           </LabelInputContainer>
