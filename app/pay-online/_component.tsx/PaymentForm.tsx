@@ -1,33 +1,33 @@
 "use client";
 import axios from 'axios'
-import React, { FormEventHandler, useState } from "react";
+import React, { FormEvent, FormEventHandler, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
 const PaymentForm =() => {
 
-  const [form, setForm] = useState({name:'', number:'', email: ''});
+  const [form, setForm] = useState({ name: '', number: '', email: '' });
   const [amount, setAmount] = useState(0);
-  const handleChange = (e: { target: {
-    [x: string]: any; name: any; 
-}; })=>{
-    setForm({...form, [e.target.name]: e.target.value, [e.target.email]: e.target.value})
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
   }
-  const handleSubmit = (e: { preventDefault: () => void; })=>{
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    axios.post('/api/phonepe/payment',{
-      data: {
-        ...form,
-        amount: amount
-      }
+    axios.post('/api/phonepe/payment', {
+      name: form.name,
+      email: form.email,
+      number: form.number,
+      amount: amount
     })
-    .then((response: { data: string; }) => {
-      window.location.href = response.data
-    })
-    .catch((error: any) => {
-      console.log(error);
-    });
+      .then((response: { data: string }) => {
+        window.location.href = response.data;
+      })
+      .catch((error: any) => {
+        console.log(error);
+      });
   }
   
   
