@@ -29,10 +29,16 @@ function Footer() {
                 About
               </li>
               <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Services
+                Products
               </li>
               <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Portfolio
+                Price List
+              </li>
+              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                Offers
+              </li>
+              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
+                Contact Us 
               </li>
             </ul>
           </div>

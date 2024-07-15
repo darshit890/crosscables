@@ -1,4 +1,5 @@
-import { SignupFormDemo } from '@/components/SignupForm'
+
+import SignupFormDemo from '@/components/SignupForm'
 import React from 'react'
 
 const Offers = () => {
