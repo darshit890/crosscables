@@ -25,7 +25,7 @@ const Offers = () => {
           </div>
         </div>
       
-      <section className="flex flex-row max-w-7xl mx-auto  pb-20">
+      <section className="flex flex-col md:flex-row max-w-7xl mx-auto  pb-20">
       <div className="flex flex-col justify-center">
         <span className="pointer-events-none max-w-xl whitespace-pre-wrap bg-gradient-to-b from-black to-gray-500/80 bg-clip-text text-center text-5xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10 pb-4">
         Get in touch for any support and inquiries.

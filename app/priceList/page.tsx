@@ -21,9 +21,9 @@ const PriceList = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 129.4118%; px-10">
-          <iframe src="https://drive.google.com/file/d/1PmJX25tP7DV-xRy3jA_H4QyfpQRduCz0/preview?usp=embed_googleplus" className="top: 0; left: 0; position: absolute; border: 0;" allowFullScreen width={600} height={300}></iframe>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className=" px-10 mx-auto">
+          <iframe src="https://drive.google.com/file/d/1PmJX25tP7DV-xRy3jA_H4QyfpQRduCz0/preview?usp=embed_googleplus" className="w-[300px] h-[200px] md:w-[500px] md:h-[250px]" allowFullScreen width={500} height={250}></iframe>
         </div>
           
           <div className="px-10">
