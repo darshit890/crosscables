@@ -4,17 +4,14 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-
-
-const PaymentForm =() => {
-    
+const PaymentForm =() => {    
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border mb-10">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Enter the details
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Fill the details for payment.
+        Fill the details for payment
       </p>
 
       <form className="my-8">
