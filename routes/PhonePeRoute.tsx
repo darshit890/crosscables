@@ -22,7 +22,7 @@ router.post("/payment", async (req: Request, res: Response) => {
       merchantUserId: 'MUID9EFW8E9F89EWF8C',
       name: name,
       email: email,
-      amount: 100 * 100,
+      amount: amount * 100,
       redirectUrl: 'http://localhost:5000/api/phonepe/status',
       redirectMode: 'POST',
       mobileNumber: number,
