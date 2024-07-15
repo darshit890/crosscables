@@ -10,15 +10,10 @@ interface iAppProps {
   id: string;
 }
 
-export function ProductCard({
-  images,
-  id,
-  smallDescription,
-  name,
-}: iAppProps) {
+export function ProductCard({ images, id, smallDescription, name }: iAppProps) {
   return (
     <div className="rounded-lg border p-5 shadow-md">
-      <div className="relative h-[230px]">
+      <div className="relative h-[200px] ">
         <Image
           alt="Product image"
           src={images}

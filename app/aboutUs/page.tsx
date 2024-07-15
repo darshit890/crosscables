@@ -3,6 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import { ArrowRightIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const content = [
   {
@@ -90,7 +93,18 @@ const content = [
 const AboutUs = () => {
   return (
     <div className="p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
-      <h1 className="text-4xl font-bold text-center mb-8 bg-blue-900 text-white py-4 rounded-lg">About Us</h1>
+      <div className="z-10 flex min-h-[8rem] items-center justify-center">
+          <div
+            className={cn(
+              "group rounded-full border border-black/5 bg-white text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-gray-50 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+            )}
+          >
+            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+              <span>✨ About us</span>
+              <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+            </AnimatedShinyText>
+          </div>
+        </div>
       <StickyScroll content={content} />
       <p className="text-xl text-center mt-4 text-blue-800">Thank you for choosing Toss Automobiles as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.</p>
     </div>

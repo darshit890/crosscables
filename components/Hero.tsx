@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import React from 'react'
+import React from "react";
 
 import Link from "next/link";
 
@@ -12,8 +12,10 @@ const Hero = () => {
     <div>
       <div className="h-45 relative flex  w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
         <HeroHighlight className="h-full w-full flex flex-col items-center justify-center gap-3 ">
-          <h6 className="text-2xl font-semibold text-center">Need Best Two Wheeler Control Cables?</h6>
-      <Meteors number={30} />
+          <h6 className="text-2xl font-semibold text-center">
+            Need Best Two Wheeler Control Cables?
+          </h6>
+          <Meteors number={30} />
           <br />
           <motion.h1
             initial={{
@@ -30,22 +32,23 @@ const Hero = () => {
             }}
             className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
           >
-            We Are The {" "}
+            We Are The{" "}
             <Highlight className="text-black dark:text-white">
-            Manufacturer of High-End Two Wheeler Control
-            Cables.
+              Manufacturer of High-End Two Wheeler Control Cables.
             </Highlight>
           </motion.h1>
           <br />
           <div className="flex gap-4">
-            <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-primary/90 px-8 py-2 bg-primary rounded-md text-white font-light transition duration-200 ease-linear">
-              Our Products  
-            </button>
+            <Link href={"/products"}>
+              <button className="shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-primary/90 px-8 py-2 bg-primary rounded-md text-white font-light transition duration-200 ease-linear">
+                Our Products
+              </button>
+            </Link>
           </div>
-        </HeroHighlight>  
+        </HeroHighlight>
+      </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
