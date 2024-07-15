@@ -3,7 +3,7 @@ import React, { FormEventHandler } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import Swal from 'sweetalert2';
+
 
 
 const PaymentForm =() => {
