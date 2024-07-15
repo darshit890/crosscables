@@ -16,7 +16,7 @@ const PaymentForm =() => {
   }
   const handleSubmit = (e: { preventDefault: () => void; })=>{
     e.preventDefault();
-    axios.post('api/phonepe/payment',{
+    axios.post('/api/phonepe/payment',{
       data: {
         ...form,
         amount: amount
