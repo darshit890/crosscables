@@ -6,31 +6,6 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
 const PaymentForm =() => {
-
-  const [form, setForm] = useState({ name: '', number: '', email: '' });
-  const [amount, setAmount] = useState(0);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  }
-
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    axios.post('/api/phonepe/payment', {
-      name: form.name,
-      email: form.email,
-      number: form.number,
-      amount: amount
-    })
-      .then((response: { data: string }) => {
-        window.location.href = response.data;
-      })
-      .catch((error: any) => {
-        console.log(error);
-      });
-  }
-  
-  
   return (
     <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black border mb-10">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
@@ -40,25 +15,22 @@ const PaymentForm =() => {
         Fill the details for payment
       </p>
 
-      <form className="my-8" onSubmit={handleSubmit}>
+      <form className="my-8">
           <LabelInputContainer className='mb-4'>
             <Label htmlFor="firstname">Full name</Label>
-            <Input id="name" placeholder="Tyler" type="text" name="name" onChange={handleChange}/>
+            <Input id="name" placeholder="Tyler" type="text" name="name" />
           </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="abc@gmail.com.com" type="email" name="email" onChange={handleChange}/>
+          <Input id="email" placeholder="abc@gmail.com.com" type="email" name="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="contactno">Contact Number</Label>
-          <Input id="contactno" placeholder="1234567890" type="number" name="contactno" onChange={handleChange}/>
+          <Input id="contactno" placeholder="1234567890" type="number" name="contactno" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="amount">Amount</Label>
-          <Input id="amount" placeholder="******" type="number" name="amount" onChange={(e)=>{
-            const parsedValue = parseFloat(e.target.value);
-            setAmount(parsedValue)
-          }}/>
+          <Input id="amount" placeholder="******" type="number" name="amount"/>
         </LabelInputContainer>
         
 
