@@ -1,4 +1,4 @@
-const express = require("express");
+import express from 'express'
 const router = express.Router();
 const crypto = require('crypto');
 const axios = require('axios');
@@ -55,14 +55,14 @@ function generateTransactionID() {
     
         axios
         .request(options)
-        .then(function (response) {
+        .then(function (response: { data: { data: { instrumentResponse: { redirectInfo: { url: any; }; }; }; }; }) {
             return res.status(200).send(response.data.data.instrumentResponse.redirectInfo.url);
         })
-        .catch(function (error) {
+        .catch(function (error: any) {
             console.error(error);
         });
 
-    } catch (error) {
+    } catch (error: any) {
         res.status(500).send({
             message: error.message,
             success: false
@@ -98,10 +98,10 @@ router.post('/status', async(req, res) => {
     // CHECK PAYMENT TATUS
     axios
     .request(options)
-    .then(async(response) => {
+    .then(async(response: any) => {
         console.log(response)
     })
-    .catch((error) => {
+    .catch((error: any) => {
         console.error(error);
     });
 });

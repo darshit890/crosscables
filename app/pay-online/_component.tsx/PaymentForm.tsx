@@ -1,4 +1,5 @@
 "use client";
+import axios from 'axios'
 import React, { FormEventHandler, useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -21,10 +22,10 @@ const PaymentForm =() => {
         amount: amount
       }
     })
-    .then(response => {
+    .then((response: { data: string; }) => {
       window.location.href = response.data
     })
-    .catch(error => {
+    .catch((error: any) => {
       console.log(error);
     });
   }
