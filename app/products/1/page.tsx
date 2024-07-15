@@ -39,7 +39,7 @@ export default async function ProductPage({
             <li>OEM-quality replacement</li>
             <li>Reduces pedal play</li>
           </ul>
-          <Link href={"/pricelist"}>
+          <Link href={"/priceList"}>
             <button className="mt-5 shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-primary/90 px-8 py-2 bg-primary rounded-md text-white font-light transition duration-200 ease-linear">
               Our Price List
             </button>
