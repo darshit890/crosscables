@@ -1,3 +1,4 @@
+import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -22,10 +23,10 @@ function Footer() {
           <div className="p-3 md:p-5 mb-6 md:mb-0 text-center md:text-left">
             <ul>
               <p className="font-bold text-xl md:text-2xl pb-2 md:pb-4">Quick Links</p>
-              {["About", "Products", "Price List", "Offers", "Contact Us"].map((item) => (
-                <li key={item} className="text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
-                  {item}
-                </li>
+              {NAV_LINKS.map((link) => (
+                <Link href={link.href} key={link.key} className="flex flex-col text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
+                    {link.label}
+                </Link>
               ))}
             </ul>
           </div>
