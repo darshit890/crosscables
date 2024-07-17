@@ -20,7 +20,10 @@ const MobileNav = () => {
             <SheetContent>
                 <Link href="/" className='flex items-center gap-3'>
                     <Image src="/logo.jpg" alt="logo" width={50} height={50}></Image>
-                    <h2 className='font-style: italic font-bold text-2xl font-sans'>Toss Cables</h2>
+                    <div>
+                        <h2 className='font-style: italic font-bold text-2xl font-sans'>Toss Cables</h2>
+                        <p className='text-xs sm:text-sm text-gray-500'>By Maruti Industries</p>
+                    </div>
                 </Link>
                 
                 <nav className='flex flex-col justify-center items-center gap-8 mt-11'>

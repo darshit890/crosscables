@@ -9,7 +9,10 @@ const Navbar = () => {
     <nav className="flex justify-between px-4 sm:px-6 md:px-10 py-3 sm:py-5 items-center">
       <Link href="/" className='flex items-center gap-2 sm:gap-3'>
         <Image src="/logo.jpg" alt="logo" width={50} height={50} className="w-12 h-12 sm:w-16 sm:h-16 md:w-[75px] md:h-[75px]" />
-        <h2 className='font-style: italic font-bold text-lg sm:text-xl md:text-2xl font-sans text-blue-900'>Toss Cables</h2>
+        <div>
+          <h2 className='font-style: italic font-bold text-lg sm:text-xl md:text-2xl font-sans text-blue-900'>Toss Cables</h2>
+          <p className='text-xs sm:text-sm text-gray-500'>By Maruti Industries</p>
+        </div>
       </Link>
       
       <ul className="hidden h-full gap-6 md:gap-8 lg:gap-12 lg:flex">
