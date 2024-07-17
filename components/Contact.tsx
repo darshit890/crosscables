@@ -25,7 +25,7 @@ const Contact = () => {
             Reach out to us
           </span>
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl pt-2 sm:pt-4 font-medium text-center mx-auto pb-10 sm:pb-16 md:pb-20">
-            We're all ears! Talk to us about your needs, and we'll provide the best possible solution. Our dominant information system provides sophisticated instruments.
+            We&apos;re all ears! Talk to us about your needs, and we&apos;ll provide the best possible solution. Our dominant information system provides sophisticated instruments.
           </p>
         </div>
       </section>
