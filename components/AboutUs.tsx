@@ -21,7 +21,7 @@ const AboutUs = () => {
             </AnimatedShinyText>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row mt-6 sm:mt-10 justify-between">
+        <div className="flex flex-col lg:flex-row mt-6 sm:mt-10 justify-between gap-10">
           <div className="flex flex-row items-center gap-x-2 sm:gap-x-4 justify-center mb-4 lg:mb-0">
             <Image src={"/logo.jpg"} alt="" width={50} height={50} className="w-12 h-12 sm:w-[75px] sm:h-[75px]" />
             <span className="pointer-events-none max-w-xl whitespace-pre-wrap bg-gradient-to-b from-primary to-gray-300/80 bg-clip-text text-center text-2xl sm:text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
