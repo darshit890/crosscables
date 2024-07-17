@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const content = [
   {
-    title: "Welcome to Toss Automobiles",
+    title: "Welcome to Toss Cables",
     description:
       "Your premier destination for high-quality cables designed specifically for two-wheelers. With a commitment to excellence and a passion for empowering riders with reliable accessories, we strive to be your trusted partner on the road.",
     content: (
@@ -27,7 +27,7 @@ const content = [
   {
     title: "Safety and Performance",
     description:
-      "At Toss Automobiles, we understand the importance of safety and performance when it comes to your two-wheeled adventures. That's why we offer a comprehensive range of cables meticulously crafted to meet the demanding needs of motorcycle and scooter enthusiasts.",
+      "At Toss cables, we understand the importance of safety and performance when it comes to your two-wheeled adventures. That's why we offer a comprehensive range of cables meticulously crafted to meet the demanding needs of motorcycle and scooter enthusiasts.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -43,7 +43,7 @@ const content = [
   {
     title: "Superior Craftsmanship",
     description:
-      "Our dedication to superior craftsmanship ensures that each cable is built to withstand the rigors of daily use, providing you with peace of mind and confidence on every ride. Whether you're a seasoned rider or just starting out, you can trust Toss Automobiles to deliver products that excel in both durability and functionality.",
+      "Our dedication to superior craftsmanship ensures that each cable is built to withstand the rigors of daily use, providing you with peace of mind and confidence on every ride. Whether you're a seasoned rider or just starting out, you can trust Toss Cables to deliver products that excel in both durability and functionality.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -75,7 +75,7 @@ const content = [
   {
     title: "Customer Satisfaction",
     description:
-      "Customer satisfaction is at the core of everything we do. From our easy-to-navigate online store to our dedicated customer support team, we're here to ensure that your experience with Toss Automobiles exceeds your expectations every step of the way.",
+      "Customer satisfaction is at the core of everything we do. From our easy-to-navigate online store to our dedicated customer support team, we're here to ensure that your experience with Toss Cables exceeds your expectations every step of the way.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
@@ -118,7 +118,7 @@ const AboutUs = () => {
         <StickyScroll content={content} />
       </div>
       <p className="text-lg md:text-xl text-center mt-4 text-blue-800">
-        Thank you for choosing Toss Automobiles as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
+        Thank you for choosing Toss Cables as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
       </p>
     </div>
   );
