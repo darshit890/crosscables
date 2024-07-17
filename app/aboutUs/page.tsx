@@ -92,23 +92,37 @@ const content = [
 
 const AboutUs = () => {
   return (
-    <div className="p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
-      <div className="z-10 flex min-h-[8rem] items-center justify-center">
-          <div
-            className={cn(
-              "group rounded-full border border-black/5 bg-white text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-gray-50 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-700"
-            )}
-          >
-            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>✨ About us</span>
-              <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-            </AnimatedShinyText>
-          </div>
+    <div className="p-4 md:p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
+      <div className="z-10 flex min-h-[6rem] md:min-h-[8rem] items-center justify-center">
+        <div
+          className={cn(
+            "group rounded-full border border-black/5 bg-white text-sm md:text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-gray-50 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+          )}
+        >
+          <AnimatedShinyText className="inline-flex items-center justify-center px-3 py-1 md:px-4 md:py-2 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+            <span>✨ About us</span>
+            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
+          </AnimatedShinyText>
         </div>
-      <StickyScroll content={content} />
-      <p className="text-xl text-center mt-4 text-blue-800">Thank you for choosing Toss Automobiles as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.</p>
+      </div>
+      <div className="md:hidden">
+        {content.map((item, index) => (
+          <div key={index} className="mb-8">
+            <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
+            <p className="mb-4">{item.description}</p>
+            <div className="h-64 w-full">{item.content}</div>
+          </div>
+        ))}
+      </div>
+      <div className="hidden md:block">
+        <StickyScroll content={content} />
+      </div>
+      <p className="text-lg md:text-xl text-center mt-4 text-blue-800">
+        Thank you for choosing Toss Automobiles as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
+      </p>
     </div>
   );
 };
+
 
 export default AboutUs;

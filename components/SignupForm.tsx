@@ -63,7 +63,7 @@ const SignupFormDemo =() => {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="contactno">Contact Number</Label>
-          <Input id="contactno" placeholder="1234567890" type="number" name="contactno"/>
+          <Input id="contactno" placeholder="1234567890" type="tel" name="contactno"/>
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="subject">Subject</Label>
