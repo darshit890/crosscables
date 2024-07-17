@@ -1,65 +1,48 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6';
 
 function Footer() {
   return (
     <div className="">
-    <div className="border-t border w-full "></div>
-      <section className="max-w-7xl mx-auto ">
-        <div className=" h-1/2 w-full flex md:flex-row flex-col justify-around items-start py-20 px-6 mx-auto ">
-          <div className="">
+      <div className="border-t border w-full"></div>
+      <section className="max-w-7xl mx-auto">
+        <div className="w-full flex flex-col md:flex-row justify-around items-start py-10 md:py-20 px-4 sm:px-6 mx-auto">
+          <div className="mb-8 md:mb-0 text-center md:text-left">
             <ul>
-              <Image src={'/logo.jpg'} alt="" width={170} height={75} />
-              <div className="flex gap-6 pb-5">
-                <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-                <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
-                <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-600" />
-                <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+              <Image src={'/logo.jpg'} alt="" width={130} height={60} className="mx-auto md:mx-0 mb-4" />
+              <div className="flex gap-4 md:gap-6 pb-5 justify-center md:justify-start">
+                <Link href={"https://wa.me/9898222345"}><FaWhatsapp className="text-xl md:text-2xl cursor-pointer hover:text-green-600" /></Link>
+                <Link href={"https://x.com/TossCables"}><FaXTwitter className="text-xl md:text-2xl cursor-pointer hover:text-blue-600" /></Link>
               </div>
             </ul>
           </div>
-          <div className="p-5">
+          <div className="p-3 md:p-5 mb-6 md:mb-0 text-center md:text-left">
             <ul>
-              <p className=" font-bold text-2xl pb-4">Quick Links</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                About
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Products
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Price List
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Offers
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Contact Us 
-              </li>
+              <p className="font-bold text-xl md:text-2xl pb-2 md:pb-4">Quick Links</p>
+              {["About", "Products", "Price List", "Offers", "Contact Us"].map((item) => (
+                <li key={item} className="text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
-          <div className="p-5">
+          <div className="p-3 md:p-5 text-center md:text-left">
             <ul>
-              <p className=" font-bold text-2xl pb-4">Legal</p>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Privacy Policy
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Terms & Conditions
-              </li>
-              <li className="text-gray-500 text-md pb-2 font-semibold hover:text-primary cursor-pointer">
-                Refund Policy
-              </li>
+              <p className="font-bold text-xl md:text-2xl pb-2 md:pb-4">Legal</p>
+              {["Privacy Policy", "Terms & Conditions", "Refund Policy"].map((item) => (
+                <li key={item} className="text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
+                  {item}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </section>
-      <div className="flex flex-col justify-center items-center text-center  py-5 border-t border">
-        <h1 className=" text-gray-400 font-semibold">
+      <div className="flex flex-col justify-center items-center text-center py-3 md:py-5 border-t border">
+        <h1 className="text-gray-400 text-xs md:text-sm font-semibold">
           © 2024 Toss Cables, All rights reserved
         </h1>
       </div>
