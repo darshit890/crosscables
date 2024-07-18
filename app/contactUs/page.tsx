@@ -28,7 +28,7 @@ const Offers = () => {
         <div className="flex flex-col justify-center md:w-1/2">
           <div className="flex flex-col justify-center space-y-4 md:space-y-6">
             <p className="text-base md:text-xl text-muted-foreground max-w-xl font-medium text-center mx-auto">
-              <span className='font-bold'>Email:</span> sunit.sadhwani@gmail.com, marutispare@gmail.com
+              <span className='font-bold'>Email:</span> sunit.sadhwani@gmail.com, marutiinsutries2424@gmail.com
             </p>
             <p className="text-base md:text-xl text-muted-foreground max-w-xl font-medium text-center mx-auto pb-10 md:pb-20">
               <span className='font-bold'>Phone No & Whatsapp (Owner):</span> 7778017801, 9898222345
