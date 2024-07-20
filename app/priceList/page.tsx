@@ -1,26 +1,17 @@
 "use client"
 
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text"
+import PageHero from "@/components/PageHero"
 import { cn } from "@/lib/utils"
 import { ArrowRightIcon } from "lucide-react"
 import Link from "next/link"
 
 const PriceList = () => {
   return (
+    <>
+    <PageHero title="Price List" />
     <div className="bg-gradient-to-br from-blue-100 to-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-10 py-6 sm:py-10">
-        <div className="z-10 flex min-h-[6rem] sm:min-h-[8rem] items-center justify-center">
-          <div
-            className={cn(
-              "group rounded-full border border-black/5 bg-white text-sm sm:text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-gray-50 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-700"
-            )}
-          >
-            <AnimatedShinyText className="inline-flex items-center justify-center px-3 sm:px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>✨ Price List</span>
-              <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-            </AnimatedShinyText>
-          </div>
-        </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="px-4 sm:px-10 mx-auto">
@@ -47,6 +38,7 @@ const PriceList = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
