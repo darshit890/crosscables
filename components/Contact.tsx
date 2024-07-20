@@ -7,7 +7,7 @@ import SignupCompo from './SignupCompo'
 const Contact = () => {
   return (
     <>
-      <section className="pt-20 sm:pt-30 md:pt-40 body">
+      <section className="pt-20 sm:pt-30 md:pt-20 body">
         <div className="flex flex-col max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="z-10 flex min-h-[4rem] sm:min-h-[5rem] items-center justify-center">
             <div

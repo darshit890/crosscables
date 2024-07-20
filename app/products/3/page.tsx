@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
+import PageHero from "@/components/PageHero";
 
 export default async function ProductPage({
   params,
@@ -9,6 +10,7 @@ export default async function ProductPage({
 }) {
   return (
     <>
+    <PageHero title="Speedometer Cable" />
       <section className="mx-auto px-4 mt-6 lg:mt-10 max-w-7xl lg:px-5 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
         <Image
           src="/Product3.jpg"
@@ -18,10 +20,6 @@ export default async function ProductPage({
           className="object-cover h-[300px] sm:h-[400px] lg:h-[450px] w-full rounded-lg col-span-3"
         />
         <div className="max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4">
-          <h1 className="text-xl sm:text-2xl lg:text-3xl font-extrabold tracking-tight text-gray-900">
-            Speedometer Cable
-          </h1>
-          
           <p className="mb-4 text-base sm:text-lg leading-relaxed mt-6 lg:mt-10">
             A vital component connecting your vehicle&apos;s transmission to the
             speedometer. This durable cable transmits rotational movement,

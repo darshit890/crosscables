@@ -14,7 +14,7 @@ const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-900 text-white pb-12 pt-8 px-4 sm:px-6 lg:px-8">
       <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8">WHY PEOPLE CHOOSE US</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {reasons.map((reason, index) => (

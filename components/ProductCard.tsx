@@ -13,7 +13,7 @@ interface iAppProps {
 export function ProductCard({ images, id, smallDescription, name }: iAppProps) {
   return (
     <div className="rounded-lg border p-3 sm:p-5 shadow-md">
-      <div className="relative h-[150px] sm:h-[200px]">
+      <div className="relative h-[150px] sm:h-[350px]">
         <Image
           alt="Product image"
           src={images}
