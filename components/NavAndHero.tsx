@@ -26,8 +26,8 @@ const NavbarAndHero: React.FC = () => {
       <Image
         src="/motobike.jpg"
         alt="Hero background"
-        layout="fill"
-        objectFit="cover"
+        fill
+        style={{ objectFit: 'cover' }}
         priority
       />
       <div className="absolute inset-0 bg-black bg-opacity-50" />
