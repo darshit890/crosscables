@@ -19,7 +19,7 @@ const PageHero = ({ title }: { title: string}) => {
   return (
     <div className="relative h-[50vh]">
       <Image
-        src="/motobike.jpg"
+        src="/hero2.jpg"
         alt="Hero background"
         layout="fill"
         objectFit="cover"
