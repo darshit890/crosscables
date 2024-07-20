@@ -15,7 +15,7 @@ const Offers = () => {
 
       <div className="flex justify-center relative z-10">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScGCRZzx4x_a8LqrMzHLZUISEF8fiz06uh0quuWP45I6zt8lw/viewform?embedded=true&usp=embed_googleplus"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScGCRZzx4x_a8LqrMzHLZUISEF8fiz06uh0quuWP45I6zt8lw/viewform?usp=sf_link&embedded=true&usp=embed_googleplus"
           allowFullScreen
           className="w-full max-w-[700px] h-[500px] sm:h-[700px] md:h-[1000px]"
         ></iframe>
