@@ -6,6 +6,7 @@ import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import PageHero from "@/components/PageHero";
 
 const content = [
   {
@@ -91,20 +92,11 @@ const content = [
 ];
 
 const AboutUs = () => {
+  
   return (
+    <>
+    <PageHero title="About Us" />
     <div className="p-4 md:p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
-      <div className="z-10 flex min-h-[6rem] md:min-h-[8rem] items-center justify-center">
-        <div
-          className={cn(
-            "group rounded-full border border-black/5 bg-white text-sm md:text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-gray-50 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-700"
-          )}
-        >
-          <AnimatedShinyText className="inline-flex items-center justify-center px-3 py-1 md:px-4 md:py-2 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-            <span>✨ About us</span>
-            <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-          </AnimatedShinyText>
-        </div>
-      </div>
       <div className="md:hidden">
         {content.map((item, index) => (
           <div key={index} className="mb-8">
@@ -121,6 +113,7 @@ const AboutUs = () => {
         Thank you for choosing Toss Cables as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
       </p>
     </div>
+    </>
   );
 };
 
