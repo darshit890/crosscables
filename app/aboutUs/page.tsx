@@ -7,6 +7,7 @@ import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import PageHero from "@/components/PageHero";
+import { motion } from "framer-motion";
 
 const content = [
   {
@@ -16,7 +17,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/logo.jpg"
+          src="/logo2.jpg"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -92,27 +93,39 @@ const content = [
 ];
 
 const AboutUs = () => {
-  
   return (
     <>
-    <PageHero title="About Us" />
-    <div className="p-4 md:p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
-      <div className="md:hidden">
-        {content.map((item, index) => (
-          <div key={index} className="mb-8">
-            <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
-            <p className="mb-4">{item.description}</p>
-            <div className="h-64 w-full">{item.content}</div>
-          </div>
-        ))}
+      <PageHero title="About Us" />
+      <div className="p-4 md:p-10 bg-gradient-to-br from-blue-100 to-white text-gray-900">
+        <div className="md:hidden space-y-12">
+          {content.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="mb-8"
+            >
+              <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
+              <p className="mb-4">{item.description}</p>
+              <div className="h-64 w-full rounded-lg overflow-hidden">
+                {item.content}
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        <div className="hidden md:block">
+          <StickyScroll content={content} />
+        </div>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+          className="text-lg md:text-xl text-center mt-8 text-blue-800"
+        >
+          Thank you for choosing Toss Cables as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
+        </motion.p>
       </div>
-      <div className="hidden md:block">
-        <StickyScroll content={content} />
-      </div>
-      <p className="text-lg md:text-xl text-center mt-4 text-blue-800">
-        Thank you for choosing Toss Cables as your trusted source for premium cables for two-wheelers. Join us on the journey to elevate your riding experience to new heights.
-      </p>
-    </div>
     </>
   );
 };
