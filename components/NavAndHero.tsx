@@ -79,7 +79,7 @@ const NavbarAndHero: React.FC = () => {
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-center h-[calc(100vh-4rem)]">
         <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-7 rounded-2xl backdrop-blur-sm bg-white/10">
-          <p className="text-lg sm:text-xl mb-8">
+          <p className="text-lg sm:text-xl mb-8 text-yellow-100">
           Need Best Two Wheeler Control Cables?
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-6">
