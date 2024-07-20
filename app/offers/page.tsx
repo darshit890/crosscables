@@ -20,10 +20,6 @@ const Offers = () => {
           className="w-full max-w-[700px] h-[500px] sm:h-[700px] md:h-[1000px]"
         ></iframe>
       </div>
-
-      <p className="text-sm sm:text-base md:text-xl text-center mt-6 md:mt-10 text-blue-800 relative z-10 px-4">
-        *Note: By submitting in this form you will get a chance to become a VIP customer of our firm. Which will open the gate to many additional perks.
-      </p>
     </div>
     </>
   )
