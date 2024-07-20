@@ -1,27 +1,41 @@
+"use client"
 import Image from "next/image";
 import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { useState, useEffect } from "react";
 
-export default async function ProductPage({
+export default function ProductPage({
   params,
 }: {
   params: { id: string };
 }) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <>
-    <PageHero title="Front Brake Cable" />
-      <section className="mx-auto px-4 lg:mt-10 max-w-7xl lg:px-5 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
-        <div className="lg:col-span-3 mb-6 lg:mb-0">
+      <PageHero title="Front Brake Cable" />
+      <section className="mx-auto px-4 mt-6 lg:mt-10 max-w-7xl lg:px-5 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
+        <div 
+          className={`transition-opacity duration-1000 ease-in-out ${
+            isVisible ? "opacity-100" : "opacity-0"
+          } lg:col-span-3 mb-6 lg:mb-0`}
+        >
           <Image
             src="/Product5.jpg"
-            alt="yoo"
+            alt="Front Brake Cable"
             height={200}
             width={400}
             className="object-cover h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-lg"
           />
         </div>
-        <div className="max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4">
+        <div className={`max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4 transition-all duration-1000 ease-in-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}>
           <p className="mb-4 text-base sm:text-lg mt-4 lg:mt-10">
             Essential for reliable stopping power. This high-quality front brake
             cable ensures smooth and responsive braking for your bicycle. Made
@@ -53,24 +67,38 @@ export default async function ProductPage({
           </h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4 gap-6 sm:gap-10">
-          <ProductCard
-            images="/Product1.jpg"
-            name="Accelarator Cable"
-            smallDescription="Links the gas pedal to the throttle body, controlling fuel input and engine speed in response to driver input."
-            id="1"
-          />
-          <ProductCard
-            images="/Product2.jpg"
-            name="Clutch Cable"
-            smallDescription="Connects the clutch pedal to the clutch fork, enabling smooth engagement and disengagement of the clutch in manual transmission vehicles."
-            id="2"
-          />
-          <ProductCard
-            images="/Product3.jpg"
-            name="Speedometer Cable"
-            smallDescription="Transmits vehicle speed from the transmission to the speedometer for accurate speed readings."
-            id="3"
-          />
+          {[
+            {
+              images: "/Product1.jpg",
+              name: "Accelarator Cable",
+              smallDescription: "Links the gas pedal to the throttle body, controlling fuel input and engine speed in response to driver input.",
+              id: "1"
+            },
+            {
+              images: "/Product2.jpg",
+              name: "Clutch Cable",
+              smallDescription: "Connects the clutch pedal to the clutch fork, enabling smooth engagement and disengagement of the clutch in manual transmission vehicles.",
+              id: "2"
+            },
+            {
+              images: "/Product3.jpg",
+              name: "Speedometer Cable",
+              smallDescription: "Transmits vehicle speed from the transmission to the speedometer for accurate speed readings.",
+              id: "3"
+            }
+          ].map((product, index) => (
+            <div
+              key={product.id}
+              className={`transition-all duration-1000 ease-in-out ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+              }`}
+              style={{ transitionDelay: `${index * 200}ms` }}
+            >
+              <ProductCard {...product} />
+            </div>
+          ))}
         </div>
       </div>
     </>

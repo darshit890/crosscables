@@ -31,9 +31,13 @@ const NavbarAndHero: React.FC = () => {
       <nav className="relative z-10 bg-transparent text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <Image src="/logo.jpg" alt="logo" width={100} height={40} />
+          <Link href="/" className='flex items-center gap-2 sm:gap-3'>
+            <Image src="/logo.jpg" alt="logo" width={50} height={50} className="w-12 h-12 sm:w-16 sm:h-16 md:w-[75px] md:h-[75px]" />
+            <div>
+              <h2 className='font-style: italic font-bold text-lg sm:text-xl md:text-2xl font-sans'>Toss Cables</h2>
+              <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
             </div>
+          </Link>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navItems.map((item) => (
@@ -74,7 +78,7 @@ const NavbarAndHero: React.FC = () => {
 
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-center h-[calc(100vh-4rem)]">
-        <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-7 rounded-2xl backdrop-blur-md bg-white/10">
+        <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-7 rounded-2xl backdrop-blur-sm bg-white/10">
           <p className="text-lg sm:text-xl mb-8">
           Need Best Two Wheeler Control Cables?
           </p>
