@@ -9,11 +9,11 @@ const PageHero = ({ title }: { title: string}) => {
 
   const navItems = [
     { label: 'HOME', href: '/' },
-    { label: 'OUR COMPANY', href: '/company' },
     { label: 'PRODUCTS', href: '/products' },
-    { label: 'INDUSTRY', href: '/industry' },
-    { label: 'QUALITY ASSURANCE', href: '/quality' },
-    { label: 'CONTACT US', href: '/contact' },
+    { label: 'PRICE LIST', href: '/priceList' },
+    { label: 'OFFERS', href: '/offers' },
+    { label: 'ABOUT US', href: '/aboutUs' },
+    { label: 'CONTACT US', href: '/contactUs' },
   ];
 
   return (
