@@ -37,7 +37,7 @@ const NavbarAndHero: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             <Link href="/" className='flex items-center gap-2 sm:gap-3'>
-              <Image src="/logo.jpg" alt="logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" />
+              <Image src="/logo2.jpg" alt="logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" />
               <div>
                 <h2 className='italic font-bold text-base sm:text-lg md:text-xl font-sans'>Toss Cables</h2>
                 <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
