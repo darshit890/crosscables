@@ -75,13 +75,14 @@ const NavbarAndHero: React.FC = () => {
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-center h-[calc(100vh-4rem)]">
         <div className="text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-7 rounded-2xl backdrop-blur-md bg-white/10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-            Welcome to Silco Control Cables
-          </h1>
           <p className="text-lg sm:text-xl mb-8">
-            TOTAL CONTROL ON THE ROAD
+          Need Best Two Wheeler Control Cables?
           </p>
-          <Link href="/get-started" className="inline-block bg-primary hover:bg-primary/80 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+          <h1 className="text-4xl sm:text-5xl md:text-4xl font-bold mb-6">
+            We Are The Manufacturer of High-End Two Wheeler Control Cables.
+          </h1>
+          
+          <Link href="/aboutUs" className="inline-block bg-primary hover:bg-primary/80 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
             LEARN MORE
             <span className="ml-2">→</span>
           </Link>
