@@ -43,7 +43,7 @@ function Footer() {
     >
       <footer className="bg-gray-100 pt-20 pb-12 px-4 sm:px-6 lg:px-8  ">
       <div className="max-w-7xl bg-white mx-auto border p-10 rounded-3xl">
-        <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
+        <div className="flex flex-col lg:flex-row justify-between lg:px-20 items-start mb-8">
         <div className="mb-8 md:mb-0 text-center md:text-left">
             <ul>
               <Image src={'/logo1.jpg'} alt="" width={130} height={60} className="mx-auto md:mx-0 mb-4" />
