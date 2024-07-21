@@ -72,7 +72,7 @@ const NavbarAndHero: React.FC = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <Link key={item.label} href={item.href} className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
+                <Link key={item.label} href={item.href} className="hover:font-bold block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
                   {item.label}
                 </Link>
               ))}

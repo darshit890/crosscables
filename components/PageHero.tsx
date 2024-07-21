@@ -29,25 +29,25 @@ const PageHero = ({ title }: { title: string}) => {
       {/* Navbar */}
       <nav className="relative z-10 bg-transparent text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-          <Link href="/" className='flex items-center gap-2 sm:gap-3'>
-            <Image src="/logo2.jpg" alt="logo" width={50} height={50} className="w-12 h-12 sm:w-16 sm:h-16 md:w-[75px] md:h-[75px]" />
-            <div>
-              <h2 className='font-style: italic font-bold text-lg sm:text-xl md:text-2xl font-sans'>Toss Cables</h2>
-              <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
-            </div>
-          </Link>
+          <div className="flex items-center justify-between h-16 md:h-20">
+            <Link href="/" className='flex items-center gap-2 sm:gap-3'>
+              <Image src="/logo2.jpg" alt="logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" />
+              <div>
+                <h2 className='italic font-bold text-base sm:text-lg md:text-xl font-sans'>Toss Cables</h2>
+                <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
+              </div>
+            </Link>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navItems.map((item) => (
-                  <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md text-sm font-medium">
+                  <Link key={item.label} href={item.href} className="px-3 py-2 rounded-md text-sm font-medium hover:font-semibold transition-all duration-300">
                     {item.label}
                   </Link>
                 ))}
               </div>
             </div>
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white transition-all duration-300">
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
                   <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -66,7 +66,7 @@ const PageHero = ({ title }: { title: string}) => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <Link key={item.label} href={item.href} className="block px-3 py-2 rounded-md text-base font-medium">
+                <Link key={item.label} href={item.href} className="hover:font-bold block px-3 py-2 rounded-md text-base font-medium transition-all duration-300">
                   {item.label}
                 </Link>
               ))}
