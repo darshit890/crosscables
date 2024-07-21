@@ -21,9 +21,8 @@ const PageHero = ({ title }: { title: string}) => {
       <Image
         src="/hero2.jpg"
         alt="Hero background"
-        layout="fill"
-        objectFit="cover"
-        
+        fill
+        style={{ objectFit: 'cover' }}    
       />
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       
@@ -32,7 +31,7 @@ const PageHero = ({ title }: { title: string}) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
           <Link href="/" className='flex items-center gap-2 sm:gap-3'>
-            <Image src="/logo.jpg" alt="logo" width={50} height={50} className="w-12 h-12 sm:w-16 sm:h-16 md:w-[75px] md:h-[75px]" />
+            <Image src="/logo2.jpg" alt="logo" width={50} height={50} className="w-12 h-12 sm:w-16 sm:h-16 md:w-[75px] md:h-[75px]" />
             <div>
               <h2 className='font-style: italic font-bold text-lg sm:text-xl md:text-2xl font-sans'>Toss Cables</h2>
               <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
@@ -67,7 +66,7 @@ const PageHero = ({ title }: { title: string}) => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <Link key={item.label} href={item.href} className=" hover:font-bold block px-3 py-2 rounded-md text-base font-medium">
+                <Link key={item.label} href={item.href} className="block px-3 py-2 rounded-md text-base font-medium">
                   {item.label}
                 </Link>
               ))}
