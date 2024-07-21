@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect, useRef } from "react";
 import { ArrowRight, ArrowRightIcon } from "lucide-react";
 import { ProductCard } from "./ProductCard";
 import { Button } from "./ui/button";
@@ -7,9 +8,40 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const ProductList = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1 // Trigger when 10% of the component is visible
+      }
+    );
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="min-h-screen from-white to-blue-100/80 dark:from-gray-900 dark:to-blue-900 py-6 sm:py-10">
-      <div className="max-w-7xl mx-auto flex flex-col pt-[3rem] sm:pt-[5rem] px-4 sm:px-5">
+    <div ref={componentRef} className="min-h-screen from-white to-blue-100/80 dark:from-gray-900 dark:to-blue-900 py-6 sm:py-10">
+      <div className={cn(
+        "max-w-7xl mx-auto flex flex-col pt-[3rem] sm:pt-[5rem] px-4 sm:px-5",
+        "transition-all duration-1000 ease-in-out",
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      )}>
         <div className="z-10 flex min-h-[6rem] sm:min-h-[8rem] items-center justify-center">
           <div
             className={cn(
@@ -60,4 +92,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList; 
+export default ProductList;

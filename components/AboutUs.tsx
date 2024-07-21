@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AnimatedShinyText from "./magicui/animated-shiny-text";
 import { ArrowRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -8,13 +8,34 @@ import Link from "next/link";
 
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const componentRef = useRef(null);
 
   useEffect(() => {
-    setIsVisible(true);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1 // Trigger when 10% of the component is visible
+      }
+    );
+
+    if (componentRef.current) {
+      observer.observe(componentRef.current);
+    }
+
+    return () => {
+      if (componentRef.current) {
+        observer.unobserve(componentRef.current);
+      }
+    };
   }, []);
 
   return (
-    <div className="min-h-max bg-gradient-to-br from-white to-blue-100 dark:from-gray-900 dark:to-blue-900">
+    <div ref={componentRef} className="min-h-max bg-gradient-to-br from-white to-blue-100 dark:from-gray-900 dark:to-blue-900">
       <div className="max-w-7xl mx-auto flex flex-col pt-[2rem] sm:pt-[3rem] px-4 sm:px-5 pb-[3rem] sm:pb-[5rem]">
         <div className="z-10 flex min-h-[6rem] sm:min-h-[8rem] items-center justify-center">
           <div
@@ -36,7 +57,7 @@ const AboutUs = () => {
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
             )}
           >
-            <Image src={"/logo1.jpg"} alt="" width={50} height={50} className="w-12 h-12 sm:w-[75px] sm:h-[75px]" />
+            <Image src={"/logo2.jpg"} alt="" width={50} height={50} className="w-12 h-12 sm:w-[75px] sm:h-[75px]" />
             <span className="pointer-events-none max-w-xl whitespace-pre-wrap bg-gradient-to-b from-primary to-gray-300/80 bg-clip-text text-center text-2xl sm:text-4xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
               How it works
             </span>
