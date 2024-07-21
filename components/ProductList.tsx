@@ -38,7 +38,7 @@ const ProductList = () => {
   return (
     <div ref={componentRef} className="min-h-screen from-white to-blue-100/80 dark:from-gray-900 dark:to-blue-900 py-6 sm:py-10">
       <div className={cn(
-        "max-w-7xl mx-auto flex flex-col pt-[3rem] sm:pt-[5rem] px-4 sm:px-5",
+        "max-w-7xl mx-auto flex flex-col  px-4 sm:px-5",
         "transition-all duration-1000 ease-in-out",
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       )}>
