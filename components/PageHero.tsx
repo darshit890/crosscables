@@ -18,7 +18,7 @@ const PageHero = ({ title }: { title: string}) => {
   ];
 
   return (
-    <div className="relative h-[50vh]">
+    <div className="relative h-[65vh] sm:h-[50vh]">
       <Image
         src="/hero2.jpg"
         alt="Hero background"
@@ -79,7 +79,7 @@ const PageHero = ({ title }: { title: string}) => {
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-center h-[calc(40vh)]">
         <div className="text-center text-white px-4 sm:px-6 lg:px-8  glassmorphism p-7 rounded-2xl ">
-          <h1 className={cn`text-4xl sm:text-5xl md:text-6xl font-bold mb-4 ${isMenuOpen ? "-mt-36" : ""}`}>
+          <h1 className={cn`text-4xl sm:text-5xl md:text-6xl font-bold ${isMenuOpen ? "-mt-32" : ""}`}>
             {title}
           </h1>
         </div>

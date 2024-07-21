@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const NavbarAndHero: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -82,7 +83,7 @@ const NavbarAndHero: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative z-10 flex items-center justify-center h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)]">
+      <div className={`relative z-10 flex items-center justify-center h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] ${isMenuOpen ? "-mt-28" : ""}`}>
         <div 
           className={`text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-5 sm:p-7 rounded-2xl backdrop-blur-sm bg-white/10 transition-all duration-1000 ease-in-out transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
