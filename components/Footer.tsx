@@ -41,46 +41,51 @@ function Footer() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       )}
     >
-      <div className="border-t border w-full"></div>
-      <section className="max-w-7xl mx-auto">
-        <div className="w-full flex flex-col md:flex-row justify-around items-start py-8 md:py-16 lg:py-20 px-4 sm:px-6 mx-auto">
-          <div className="mb-8 md:mb-0 text-center md:text-left">
+      <footer className="bg-gray-100 pt-20 pb-12 px-4 sm:px-6 lg:px-8  ">
+      <div className="max-w-7xl bg-white mx-auto border p-10 rounded-3xl">
+        <div className="flex flex-col lg:flex-row justify-between items-start mb-8">
+        <div className="mb-8 md:mb-0 text-center md:text-left">
             <ul>
               <Image src={'/logo1.jpg'} alt="" width={130} height={60} className="mx-auto md:mx-0 mb-4" />
-              <div className="flex gap-4 md:gap-6 pb-5 justify-center md:justify-start">
-                <Link href={"https://wa.me/9898222345"}><FaWhatsapp className="text-xl md:text-2xl cursor-pointer hover:text-green-600 transition-colors duration-300" /></Link>
-                <Link href={"https://x.com/TossCables"}><FaXTwitter className="text-xl md:text-2xl cursor-pointer hover:text-blue-600 transition-colors duration-300" /></Link>
+              <div className="flex gap-4 md:gap-6 pb-5 justify-center md:justify-center">
+                <Link href={"https://wa.me/9898222345"}><FaWhatsapp className="text-xl md:text-2xl cursor-pointer hover:text-green-600" /></Link>
+                <Link href={"https://x.com/TossCables"}><FaXTwitter className="text-xl md:text-2xl cursor-pointer hover:text-blue-600" /></Link>
               </div>
             </ul>
           </div>
-          <div className="p-3 md:p-5 mb-6 md:mb-0 text-center md:text-left">
-            <ul>
-              <p className="font-bold text-lg md:text-xl lg:text-2xl pb-2 md:pb-4">Quick Links</p>
-              {NAV_LINKS.map((link) => (
-                <Link href={link.href} key={link.key} className="flex flex-col text-gray-500 text-xs md:text-sm lg:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer transition-colors duration-300">
-                  {link.label}
-                </Link>
-              ))}
-            </ul>
-          </div>
-          <div className="p-3 md:p-5 text-center md:text-left">
-            <ul>
-              <p className="font-bold text-lg md:text-xl lg:text-2xl pb-2 md:pb-4">Legal</p>
-              {["Privacy Policy", "Terms & Conditions", "Refund Policy"].map((item) => (
-                <li key={item} className="text-gray-500 text-xs md:text-sm lg:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer transition-colors duration-300">
-                  {item}
-                </li>
-              ))}
-            </ul>
+          
+          <div className="flex gap-16 mb-8 lg:mb-0">
+            <div className="p-3 md:p-5 mb-6 md:mb-0 text-center md:text-left">
+              <ul>
+                <p className="font-bold text-xl md:text-2xl pb-2 md:pb-4">Quick Links</p>
+                {NAV_LINKS.map((link) => (
+                  <Link href={link.href} key={link.key} className="flex flex-col text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
+                      {link.label}
+                  </Link>
+                ))}
+              </ul> 
+            </div>
+            <div className="p-3 md:p-5 text-center md:text-left">
+              <ul>
+                <p className="font-bold text-xl md:text-2xl pb-2 md:pb-4">Legal</p>
+                {["Privacy Policy", "Terms & Conditions", "Refund Policy"].map((item) => (
+                  <li key={item} className="text-gray-500 text-sm md:text-md pb-1 md:pb-2 font-semibold hover:text-primary cursor-pointer">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>  
+          </div>    
+        </div>
+        
+        <div className="border-t border-gray-200 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-600">Copyright © 2024 Toss Cables- All Right Reserved</p>
           </div>
         </div>
-      </section>
-      <div className="flex flex-col justify-center items-center text-center py-3 md:py-4 lg:py-5 border-t border">
-        <h1 className="text-gray-400 text-xs md:text-sm font-semibold">
-          © 2024 Toss Cables, All rights reserved
-        </h1>
       </div>
-    </div>
+    </footer>
+  </div>
   );
 }
 
