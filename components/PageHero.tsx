@@ -18,7 +18,7 @@ const PageHero = ({ title }: { title: string}) => {
   ];
 
   return (
-    <div className="relative h-[65vh] sm:h-[50vh]">
+    <div className="relative h-[60vh] sm:h-[50vh]">
       <Image
         src="/hero2.jpg"
         alt="Hero background"
