@@ -36,7 +36,7 @@ const Contact = () => {
       <section 
         ref={contactRef}
         className={cn(
-          "pt-12 sm:pt-16 md:pt-20 body transition-all duration-1000 ease-in-out",
+          "pt-10 body transition-all duration-1000 ease-in-out",
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         )}
       >
