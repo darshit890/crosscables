@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 const PageHero = ({ title }: { title: string}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -78,7 +79,7 @@ const PageHero = ({ title }: { title: string}) => {
       {/* Hero Section */}
       <div className="relative z-10 flex items-center justify-center h-[calc(40vh)]">
         <div className="text-center text-white px-4 sm:px-6 lg:px-8  glassmorphism p-7 rounded-2xl ">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+          <h1 className={cn`text-4xl sm:text-5xl md:text-6xl font-bold mb-4 ${isMenuOpen ? "-mt-36" : ""}`}>
             {title}
           </h1>
         </div>
