@@ -48,7 +48,7 @@ const PageHero = ({ title }: { title: string}) => {
               </div>
             </div>
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                 <span className="sr-only">Open main menu</span>
                 {isMenuOpen ? (
                   <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -67,7 +67,7 @@ const PageHero = ({ title }: { title: string}) => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <Link key={item.label} href={item.href} className="hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                <Link key={item.label} href={item.href} className=" hover:font-bold block px-3 py-2 rounded-md text-base font-medium">
                   {item.label}
                 </Link>
               ))}
