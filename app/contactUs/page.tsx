@@ -57,6 +57,7 @@ const Offers = () => {
                 transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
               >
                 <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
+<<<<<<< HEAD
                 <Link href={"https://wa.me/7778017801"} className="underline">
                   7778017801
                 </Link>
@@ -64,6 +65,9 @@ const Offers = () => {
                 <Link href={"https://wa.me/9898222345"} className="underline">
                   7778017801
                 </Link>
+=======
+                <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
+>>>>>>> 8c94321521c7f39d862d0cf2cb8533557521fedb
               </motion.p>
             </div>
             <div className="flex flex-col justify-center">
