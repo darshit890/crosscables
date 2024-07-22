@@ -38,14 +38,18 @@ const Offers = () => {
                   email="sunit.sadhwani@gmail.com"
                   subject="Hello!"
                   body="I'm interested in your services."
+                  className="underline"
                 >
                   sunit.sadhwani@gmail.com
                 </EmailLink>
+                
                 ,
+                <br />
                 <EmailLink
                   email="marutiinsutries2424@gmail.com"
                   subject="Hello!"
                   body="I'm interested in your services."
+                  className="underline"
                 >
                   marutiinsutries2424@gmail.com
                 </EmailLink>
@@ -58,13 +62,6 @@ const Offers = () => {
               >
                 <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
 
-                <Link href={"https://wa.me/7778017801"} className="underline">
-                  7778017801
-                </Link>
-                ,{" "}
-                <Link href={"https://wa.me/9898222345"} className="underline">
-                  7778017801
-                </Link>
 
                 <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
 
