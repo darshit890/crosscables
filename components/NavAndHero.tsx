@@ -23,12 +23,13 @@ const NavbarAndHero: React.FC = () => {
   ];
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-[calc(100vh-4rem)] sm:h-screen">
       <Image
         src="/motobike.jpg"
         alt="Hero background"
         fill
-        style={{ objectFit: 'cover' }}
+        sizes="(max-width: 768px) 100vw, 100vw"
+        className="object-cover object-center sm:object-center"
         priority
       />
       <div className="absolute inset-0 bg-black bg-opacity-50" />
@@ -41,7 +42,6 @@ const NavbarAndHero: React.FC = () => {
               <Image src="/logo1.png" alt="logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" />
               <div>
                 <h2 className='italic font-bold text-base sm:text-lg md:text-xl font-sans'>Toss Cables</h2>
-                <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
               </div>
             </Link>
             <div className="hidden md:block">
@@ -83,20 +83,20 @@ const NavbarAndHero: React.FC = () => {
       </nav>
 
       {/* Hero Section */}
-      <div className={`relative z-10 flex items-center justify-center h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] ${isMenuOpen ? "-mt-28" : ""}`}>
+      <div className={`relative z-10 flex items-center justify-center h-full ${isMenuOpen ? "-mt-28" : ""}`}>
         <div 
-          className={`text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-5 sm:p-7 rounded-2xl backdrop-blur-sm bg-white/10 transition-all duration-1000 ease-in-out transform ${
+          className={`text-center text-white px-4 sm:px-6 lg:px-8 max-w-3xl glassmorphism p-4 sm:p-5 md:p-7 rounded-2xl backdrop-blur-xs bg-white/10 transition-all duration-1000 ease-in-out transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
         >
-          <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-8 text-yellow-100">
-            Need Best Two Wheeler Control Cables?
+          <p className="text-sm sm:text-base md:text-lg mb-2 sm:mb-4 md:mb-8 text-yellow-100">
+            Two Wheeler Control Cables
           </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
-            We Are The Manufacturer of High-End Two Wheeler Control Cables.
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 md:mb-6">
+            Your Trusted Partner on Road.
           </h1>
           
-          <Link href="/aboutUs" className="inline-block bg-primary hover:bg-primary/80 text-white font-bold py-2 px-6 sm:py-3 sm:px-8 rounded-full text-base sm:text-lg transition duration-300">
+          <Link href="/aboutUs" className="inline-block bg-primary hover:bg-primary/80 text-white font-bold py-2 px-4 sm:py-2 sm:px-6 md:py-3 md:px-8 rounded-full text-sm sm:text-base md:text-lg transition duration-300">
             LEARN MORE
             <span className="ml-2">→</span>
           </Link>

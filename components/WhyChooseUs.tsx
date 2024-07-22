@@ -12,9 +12,8 @@ const WhyChooseUs: React.FC = () => {
   const componentRef = useRef(null);
 
   const reasons: Reason[] = [
-    { title: '500+', description: 'B2B CUSTOMERS' },
-    { title: '2', description: 'MANUFACTURING UNIT IN AHMEDABAD' },
-    { title: '10+', description: 'SUPPLIED IN INDIA STATES' },
+    { title: '1', description: 'MANUFACTURING UNIT IN AHMEDABAD' },
+    { title: '4', description: 'SUPPLIED IN INDIA STATES' },
   ];
 
   useEffect(() => {

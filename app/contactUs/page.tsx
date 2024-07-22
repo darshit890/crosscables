@@ -1,14 +1,13 @@
 "use client";
 
-import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-import PageHero from "@/components/PageHero";
-import SignupFormDemo from "@/components/SignupForm";
-import { cn } from "@/lib/utils";
-import { ArrowRightIcon } from "lucide-react";
-import React from "react";
-import { motion } from "framer-motion";
-import EmailLink from "@/components/EmailLink";
-import Link from "next/link";
+import AnimatedShinyText from '@/components/magicui/animated-shiny-text'
+import PageHero from '@/components/PageHero'
+import SignupFormDemo from '@/components/SignupForm'
+import { cn } from '@/lib/utils'
+import { ArrowRightIcon } from 'lucide-react'
+import React from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 const Offers = () => {
   return (
@@ -33,13 +32,7 @@ const Offers = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               >
-                <span className="font-bold">Email:</span>{" "}
-                <EmailLink email="sunit.sadhwani@gmail.com" subject="Hello!" body="I'm interested in your services.">
-                <span className="underline">sunit.sadhwani@gmail.com</span>
-                </EmailLink>
-                <EmailLink email="marutiinsutries2424@gmail.com" subject="Hello!" body="I'm interested in your services.">
-                , <span className="underline">marutiinsutries2424@gmail.com</span>
-                </EmailLink>
+                <span className='font-bold'>Email:</span> sunit.sadhwani@gmail.com, marutiinsutries2424@gmail.com
               </motion.p>
               <motion.p
                 className="text-base md:text-xl text-muted-foreground max-w-xl font-medium text-center mx-auto pb-10 md:pb-20"

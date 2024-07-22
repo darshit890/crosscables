@@ -54,7 +54,7 @@ const AboutUs = () => {
           <div 
             className={cn(
               "flex flex-row items-center gap-x-2 sm:gap-x-4 justify-center mb-4 lg:mb-0 transition-all duration-1000 ease-in-out",
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-1/2"
             )}
           >
             <Image src={"/logo1.jpg"} alt="" width={50} height={50} className="w-12 h-12 sm:w-[75px] sm:h-[75px]" />
@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div 
             className={cn(
               "flex flex-col max-w-2xl lg:items-start items-center mx-auto transition-all duration-1000 ease-in-out",
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
+              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-1/2"
             )}
           >
             <h4 className="text-2xl sm:text-3xl md:text-5xl font-bold pt-1 lg:text-left text-center">
