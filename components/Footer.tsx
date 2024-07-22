@@ -49,7 +49,7 @@ function Footer() {
               <ul>
                 <Image src={'/logo1.jpg'} alt="" width={130} height={60} className="mx-auto lg:mx-0 mb-4" />
                 <div className="flex gap-4 md:gap-6 pb-5 justify-center lg:justify-start">
-                  <Link href={"https://wa.me/9898222345"}><FaWhatsapp className="text-xl md:text-2xl cursor-pointer hover:text-green-600" /></Link>
+                  <Link href={"https://wa.me/7778017801"}><FaWhatsapp className="text-xl md:text-2xl cursor-pointer hover:text-green-600" /></Link>
                   <Link href={"https://x.com/TossCables"}><FaXTwitter className="text-xl md:text-2xl cursor-pointer hover:text-blue-600" /></Link>
                 </div>
               </ul>
