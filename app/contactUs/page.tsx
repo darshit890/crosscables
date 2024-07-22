@@ -1,13 +1,14 @@
 "use client";
 
-import AnimatedShinyText from '@/components/magicui/animated-shiny-text'
-import PageHero from '@/components/PageHero'
-import SignupFormDemo from '@/components/SignupForm'
-import { cn } from '@/lib/utils'
-import { ArrowRightIcon } from 'lucide-react'
-import React from 'react'
-import { motion } from 'framer-motion'
-import Link from 'next/link';
+import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
+import PageHero from "@/components/PageHero";
+import SignupFormDemo from "@/components/SignupForm";
+import { cn } from "@/lib/utils";
+import { ArrowRightIcon } from "lucide-react";
+import React from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import EmailLink from "@/components/EmailLink";
 
 const Offers = () => {
   return (
@@ -32,7 +33,22 @@ const Offers = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               >
-                <span className='font-bold'>Email:</span> sunit.sadhwani@gmail.com, marutiinsutries2424@gmail.com
+                <span className="font-bold">Email:</span>{" "}
+                <EmailLink
+                  email="sunit.sadhwani@gmail.com"
+                  subject="Hello!"
+                  body="I'm interested in your services."
+                >
+                  sunit.sadhwani@gmail.com
+                </EmailLink>
+                ,
+                <EmailLink
+                  email="marutiinsutries2424@gmail.com"
+                  subject="Hello!"
+                  body="I'm interested in your services."
+                >
+                  marutiinsutries2424@gmail.com
+                </EmailLink>
               </motion.p>
               <motion.p
                 className="text-base md:text-xl text-muted-foreground max-w-xl font-medium text-center mx-auto pb-10 md:pb-20"
@@ -41,7 +57,13 @@ const Offers = () => {
                 transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
               >
                 <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
-                <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">7778017801</Link>
+                <Link href={"https://wa.me/7778017801"} className="underline">
+                  7778017801
+                </Link>
+                ,{" "}
+                <Link href={"https://wa.me/9898222345"} className="underline">
+                  7778017801
+                </Link>
               </motion.p>
             </div>
             <div className="flex flex-col justify-center">
