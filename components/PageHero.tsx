@@ -35,7 +35,6 @@ const PageHero = ({ title }: { title: string}) => {
               <Image src="/logo1.png" alt="logo" width={50} height={50} className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16" />
               <div>
                 <h2 className='italic font-bold text-base sm:text-lg md:text-xl font-sans'>Toss Cables</h2>
-                <p className='text-xs sm:text-sm text-yellow-100'>By Maruti Industries</p>
               </div>
             </Link>
             <div className="hidden md:block">

@@ -59,22 +59,6 @@ const content = [
     ),
   },
   {
-    title: "Enthusiasts Ourselves",
-    description:
-      "But we're more than just a supplier of cables; we're enthusiasts ourselves. Our team is comprised of passionate riders who share your love for the open road. This firsthand experience allows us to understand the unique challenges riders face and enables us to develop cables that enhance your riding experience.",
-    content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
-          src="/image.jpg"
-          width={300}
-          height={300}
-          className="h-full w-full object-cover"
-          alt="linear board demo"
-        />
-      </div>
-    ),
-  },
-  {
     title: "Customer Satisfaction",
     description:
       "Customer satisfaction is at the core of everything we do. From our easy-to-navigate online store to our dedicated customer support team, we're here to ensure that your experience with Toss Cables exceeds your expectations every step of the way.",

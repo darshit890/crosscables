@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { ArrowRightIcon } from 'lucide-react'
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 const Offers = () => {
   return (
@@ -31,7 +32,7 @@ const Offers = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               >
-                <span className='font-bold'>Email:</span> sunit.sadhwani@gmail.com, marutiinsutries2424@gmail.com
+                <span className='font-bold'>Email:</span> <Link href={''}>sunit.sadhwani@gmail.com</Link>, <Link href={''}>marutiinsutries2424@gmail.com</Link>
               </motion.p>
               <motion.p 
                 className="text-base md:text-xl text-muted-foreground max-w-xl font-medium text-center mx-auto pb-10 md:pb-20"
