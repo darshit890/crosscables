@@ -41,7 +41,7 @@ const Offers = () => {
                 transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
               >
                 <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
-                <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">7778017801</Link>
+                <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
               </motion.p>
             </div>
             <div className="flex flex-col justify-center">
