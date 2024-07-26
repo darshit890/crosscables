@@ -39,25 +39,14 @@ const Offers = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
               >
-                <span className="font-bold">Email:</span>{" "}
+                <span className="font-bold">Email:</span>{" "}
                 <EmailLink
-                  email="sunit.sadhwani@gmail.com"
+                  email="marutiindustries2424@gmail.com"
                   subject="Hello!"
                   body="I'm interested in your services."
                   className="underline"
                 >
-                  sunit.sadhwani@gmail.com
-                </EmailLink>
-                
-                ,
-                <br />
-                <EmailLink
-                  email="marutiinsutries2424@gmail.com"
-                  subject="Hello!"
-                  body="I'm interested in your services."
-                  className="underline"
-                >
-                  marutiinsutries2424@gmail.com
+                  marutiindustries2424@gmail.com
                 </EmailLink>
               </motion.p>
               <motion.p
