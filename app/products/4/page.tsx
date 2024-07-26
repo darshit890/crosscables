@@ -4,13 +4,6 @@ import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useState, useEffect } from "react";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Rear Brake Cable",
-  description:
-    "Essential for optimal braking performance, our high-quality rear brake cable ensures responsive and reliable stopping power. Designed for durability and smooth operation, this cable is compatible with most bicycle models.",
-};
 
 export default function ProductPage({
   params,
