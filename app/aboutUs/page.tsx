@@ -8,6 +8,12 @@ import { ArrowRightIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import PageHero from "@/components/PageHero";
 import { motion } from "framer-motion";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us",
+  description: "At Toss cables, we understand the importance of safety and performance when it comes to your two-wheeled adventures. That's why we offer a comprehensive range of cables meticulously crafted to meet the demanding needs of motorcycle and scooter enthusiasts."
+}
 
 const content = [
   {

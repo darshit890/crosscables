@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { unstable_noStore as noStore } from "next/cache";
 import Image from "next/image";
@@ -7,12 +7,15 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useEffect, useState } from "react";
+import { Metadata } from "next";
 
-export default function ProductPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+export const metadata: Metadata = {
+  title: "Clutch Cable",
+  description:
+    "Essential for manual transmission vehicles, our high-quality clutch cable ensures smooth gear shifts and optimal clutch performance.",
+};
+
+export default function ProductPage({ params }: { params: { id: string } }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -23,7 +26,7 @@ export default function ProductPage({
     <>
       <PageHero title="Clutch Cable" />
       <section className="mx-auto px-4 mt-6 lg:mt-10 max-w-7xl lg:px-5 lg:grid lg:grid-rows-1 lg:grid-cols-7 lg:gap-x-8 lg:gap-y-10 xl:gap-x-16">
-        <div 
+        <div
           className={`transition-opacity duration-1000 ease-in-out ${
             isVisible ? "opacity-100" : "opacity-0"
           } lg:col-span-3`}
@@ -36,21 +39,25 @@ export default function ProductPage({
             className="object-cover h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-lg"
           />
         </div>
-        <div className={`max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4 transition-all duration-1000 ease-in-out ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <div
+          className={`max-w-2xl mx-auto mt-5 lg:max-w-none lg:mt-0 lg:row-end-2 lg:row-span-2 lg:col-span-4 transition-all duration-1000 ease-in-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           <h2 className="text-lg sm:text-xl mb-4 mt-6 lg:mt-10">
             Essential for manual transmission vehicles, our high-quality clutch
             cable ensures smooth gear shifts and optimal clutch performance.
           </h2>
-          <h3 className="text-base sm:text-lg font-medium mb-2">Key features:</h3>
+          <h3 className="text-base sm:text-lg font-medium mb-2">
+            Key features:
+          </h3>
           <ul className="space-y-2 mb-4 text-sm sm:text-base">
             {[
               "Precision-engineered for reliable clutch engagement",
               "Compatible with a wide range of vehicle makes and models",
               "Corrosion-resistant construction for longevity",
               "Easy installation for quick replacement",
-              "Reduces pedal effort for improved driving comfort"
+              "Reduces pedal effort for improved driving comfort",
             ].map((feature, index) => (
               <li key={index} className="flex items-start">
                 <span className="text-blue-400 mr-2">•</span>
@@ -80,21 +87,24 @@ export default function ProductPage({
             {
               images: "/Product3.jpg",
               name: "Speedometer Cable",
-              smallDescription: "Transmits vehicle speed from the transmission to the speedometer for accurate speed readings.",
-              id: "3"
+              smallDescription:
+                "Transmits vehicle speed from the transmission to the speedometer for accurate speed readings.",
+              id: "3",
             },
             {
               images: "/Product4.jpg",
               name: "Rear Brake Cable",
-              smallDescription: "Essential component that transmits force from the brake lever to the rear brake mechanism, ensuring responsive and reliable stopping power.",
-              id: "4"
+              smallDescription:
+                "Essential component that transmits force from the brake lever to the rear brake mechanism, ensuring responsive and reliable stopping power.",
+              id: "4",
             },
             {
               images: "/Product5.jpg",
               name: "Front Brake Cable",
-              smallDescription: "Critical linkage that connects the brake lever to the front brake assembly, providing precise control and efficient braking performance.",
-              id: "5"
-            }
+              smallDescription:
+                "Critical linkage that connects the brake lever to the front brake assembly, providing precise control and efficient braking performance.",
+              id: "5",
+            },
           ].map((product, index) => (
             <div
               key={product.id}

@@ -9,6 +9,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import EmailLink from "@/components/EmailLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "At Toss cables, we understand the importance of safety and performance when it comes to your two-wheeled adventures. That's why we offer a comprehensive range of cables meticulously crafted to meet the demanding needs of motorcycle and scooter enthusiasts."
+}
 
 const Offers = () => {
   return (

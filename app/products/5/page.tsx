@@ -4,6 +4,13 @@ import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useState, useEffect } from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Front Brake Cable",
+  description:
+    "Essential for reliable stopping power. This high-quality front brake cable ensures smooth and responsive braking for your bicycle. Made from durable stainless steel with a protective outer casing, it resists corrosion and withstands frequent use. Compatible with most  brake systems, this cable is easy to install and provides consistent  performance in all weather conditions.",
+};
 
 export default function ProductPage({
   params,
