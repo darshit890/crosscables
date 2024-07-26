@@ -4,13 +4,7 @@ import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useState, useEffect } from "react";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Speedometer Cable",
-  description:
-    "A vital component connecting your vehicle&apos;s transmission to the speedometer. This durable cable transmits rotational movement, allowing accurate speed readings on your dashboard. Compatible with various makes and models, our high-quality speedometer cable ensures reliable performance and easy installation. Replace your worn or damaged cable to maintain precise speed monitoring and comply with traffic regulations.",
-};
 
 export default function ProductPage({
   params,
