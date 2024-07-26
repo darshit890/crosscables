@@ -4,12 +4,7 @@ import { ProductCard } from "@/components/ProductCard";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useEffect, useState } from "react";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Accelarator Cable",
-  description: "High-quality replacement throttle control cable for vehicles.Connects the gas pedal to the engine&apos;s throttle body, ensuring smooth acceleration response. Made from durable materials for long-lasting performance. Compatible with various make and models (specify compatibility in product details). Easy installation for DIY mechanics or professionals."
-}
 
 export default function ProductPage({
   params,
