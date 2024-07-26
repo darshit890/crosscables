@@ -7,13 +7,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { useEffect, useState } from "react";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Clutch Cable",
-  description:
-    "Essential for manual transmission vehicles, our high-quality clutch cable ensures smooth gear shifts and optimal clutch performance.",
-};
 
 export default function ProductPage({ params }: { params: { id: string } }) {
   const [isVisible, setIsVisible] = useState(false);
