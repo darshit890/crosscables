@@ -7,7 +7,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton: React.FC = () => {
   const phoneNumber = '+917778017801'; // Replace with your phone number
-  const waLink = `https://wa.me/${phoneNumber}`;
+  const waLink = `https://wa.link/er9mja`;
 
   const router = useRouter();
 
