@@ -54,7 +54,7 @@ const Offers = () => {
                 <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
 
 
-                <Link href={"https://wa.me/7778017801"} className="underline">7778017801</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
+                <Link href={"https://wa.me/7359937115"} className="underline">7359937115</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
 
               </motion.p>
             </div>
