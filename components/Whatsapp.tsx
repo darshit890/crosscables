@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppButton: React.FC = () => {
-  const phoneNumber = '+917778017801'; // Replace with your phone number
+  const phoneNumber = '+917359937115'; // Replace with your phone number
   const waLink = `https://wa.link/er9mja`;
 
   const router = useRouter();
