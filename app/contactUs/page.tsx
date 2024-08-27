@@ -51,7 +51,7 @@ const Offers = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
               >
-                <span className="font-bold">Phone No & Whatsapp (Owner):</span>{" "}
+                {" "}
 
 
                 <Link href={"https://wa.me/7359937115"} className="underline">7359937115</Link>, <Link href={"https://wa.me/9898222345"} className="underline">9898222345</Link>
