@@ -28,7 +28,7 @@ const PriceList = () => {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             >
               <iframe
-                src="https://drive.google.com/file/d/1PmJX25tP7DV-xRy3jA_H4QyfpQRduCz0/preview?usp=embed_googleplus"
+                src="https://drive.google.com/file/d/1IhPzji7TuMYoyLjseX3vNVkyX2nP_FwM/view?usp=drivesdk"
                 className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[400px] lg:w-[400px] rounded-lg shadow-lg"
                 allowFullScreen
               ></iframe>
@@ -40,7 +40,7 @@ const PriceList = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
             >
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-4">PRICE LIST AS OF 2024</h2>
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-4">PRICE LIST AS OF 2025</h2>
               <p className="text-base sm:text-lg mb-4">
                 We understand that value for money is a top priority for our esteemed customers, and
                 we&apos;re proud to offer an irresistible deal. With our product, you receive top-notch quality and
