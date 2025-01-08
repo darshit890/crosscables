@@ -28,7 +28,7 @@ const PriceList = () => {
               transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
             >
               <iframe
-                src="https://drive.google.com/file/d/1IhPzji7TuMYoyLjseX3vNVkyX2nP_FwM/view?usp=drivesdk"
+                src="https://drive.google.com/file/d/1J-SnLJ4GOUjGX3wV4TzX16pjTSk7SqR5/view?usp=drivesdk"
                 className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[400px] lg:w-[400px] rounded-lg shadow-lg"
                 allowFullScreen
               ></iframe>
