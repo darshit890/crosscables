@@ -1,4 +1,4 @@
-"use client"
+ki"use client"
 
 import React from "react"
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text"
@@ -29,7 +29,7 @@ const PriceList = () => {
             >
               <iframe src="https://drive.google.com/file/d/1J-SnLJ4GOUjGX3wV4TzX16pjTSk7SqR5/preview"  allowfullscreen
                 className="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[400px] lg:w-[400px] rounded-lg shadow-lg"
-                allowFullScreen
+              
               ></iframe>
             </motion.div>
             
